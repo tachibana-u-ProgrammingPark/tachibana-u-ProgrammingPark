@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ホーム｜京都橘大学 プログラミングパーク</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" sizes="192x192" href="https://static.wixstatic.com/media/c9d870_e403d9ddc20b4219aaa594075e6ba5a5%7Emv2.jpg/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/c9d870_e403d9ddc20b4219aaa594075e6ba5a5%7Emv2.jpg" type="image/jpeg"/>
+  <link rel="shortcut icon" href="https://static.wixstatic.com/media/c9d870_e403d9ddc20b4219aaa594075e6ba5a5%7Emv2.jpg/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/c9d870_e403d9ddc20b4219aaa594075e6ba5a5%7Emv2.jpg" type="image/jpeg"/>
+  <link rel="apple-touch-icon" href="https://static.wixstatic.com/media/c9d870_e403d9ddc20b4219aaa594075e6ba5a5%7Emv2.jpg/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/c9d870_e403d9ddc20b4219aaa594075e6ba5a5%7Emv2.jpg" type="image/jpeg"/>
+</head>
+<body>
+  <!-- ヘッダーを読み込むためのdiv要素=============================================================================================== -->
+  
+  <nav class="navbar">
+    <a href="index.html" class="noUnderLine"><span class="logo"><span>京都橘大学</span><br>プログラミングパーク</span></a>
+  
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+    <div class="menu" id="menu">
+      <a href="index.html">ホーム</a>
+      <a href="equipment.html">機器利用</a>
+      <a href="academic_support.html">学習支援</a>
+      <a href="Organization_Overview.html">組織概要</a>
+      <a href="inquiry.html">お問い合わせ</a>
+    </div>
+  </nav>
+  
+  <div class="hero">
+    <img src="img/20250419_CreationLab_img.png" alt="メイン画像" class="hero-image">
+      <div class="hero-title">
+      </div>
+  </div>
+  <!-- 小さい画面の場合は、メニューを開くボタンを押すとメニューが開きます。大きい画面の場合は、メニューは常に表示されます。 =================-->
+  <div class="button-position">
+    <div class="rect-left-button"><a href="#関連ページ" class="button-text" data-target="left-content">関連ページ</a></div>
+    <div class="rect-main-button"><a href="#ようこそ" class="button-text" data-target="main-content">ようこそ</a></div>
+    <div class="rect-right-button"><a href="#お知らせ" class="button-text" data-target="right-content">お知らせ</a></div>
+  </div>
+  <!-- <メイン画面の3列設定======================================================================================================== -->
+  <div class="three-column-layout">
+    <div class="left-content">
+      <div class="hidden-clock">
+        <div class="responsive-text-left">
+          <div class="clock-container">
+            <div class="clock">
+              <div class="hour-hand"></div>
+              <div class="minute-hand"></div>
+              <div class="second-hand"></div>
+            </div>
+          </div>
+          <div class="date-time-container">
+            <span id="calendar"></span>
+            <span id="clock"></span>
+          </div>     
+        </div>
+      </div>
+      
+      <div class="responsive-text-left">
+        <h2 class="boderLine">関連ページ</h2>
+        <h3>・Teams</h3>
+          <a href="https://teams.microsoft.com/l/team/19%3AHce71oWEWldki2ZYTI-PQcKvb2av6P7ZVI9chg0zONg1%40thread.tacv2/conversations?groupId=d5d0a868-2de3-403b-8e1c-4493caff6951&tenantId=291d94fc-23c0-4fc2-8f9a-e355c3ccca11"><img src="img/20250428_Teams_img.png" alt="Map" class="equipment-image"></a>
+          <p style="text-align: center;">※京都橘大学 在学生・教職員限定</p>
+          <h3>・Touch Tech!</h3>
+          <a href="https://www.tachibana-u.ac.jp/admission/touchtech/"><img src="img/20250429_TouchTech!_img.png" alt="Map" class="equipment-image"></a>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="responsive-text-main">
+        <h2 class="boderLine">プログラミングパークへようこそ！</h2>
+        <p>プログラミングパークは、京都橘大学のCreation Lab（ファブスペース）において、学生が自由にプログラミングやものづくりに取り組める環境を提供する取り組みです。
+          3Dプリンタやレーザーカッターなどのデジタルファブリケーション機器の利用サポートをはじめ、数学系・プログラミング系の授業課題に関する相談対応や専門機器の利用方法を学べる講座などを実施しています。
+          これらの活動は、LA（Learning Assistant）として活動する学生が主体となり、メンターとして支援と運営を行っています。</p>
+
+        <h2 class="boderLine">Creation Lab</h2>
+        <p>各種工作機械を備え、情報工学科の授業および学生の自主的な活動で使用可能。
+          実際にソフトウェアでプログラムを組み工作機器で実践できる、工房をイメージしたスペースです。
+          ソフトウェア上で設計したものを工作機器で実体化することを繰り返し、機能やアイデアを形にしていく体験をすることでものづくりのおもしろさを感じることができます。</p>
+          <img src="img/20250428_CreationLab_Map_img.PNG" alt="Map" class="equipment-image">
+        
+        <h2 class="boderLine">カレンダー</h2>
+
+        <!-- GoogleCalendarを埋め込むためのiframeタグを使用します。 -->
+        <div style="max-width: 700px; margin: 2rem auto; padding: 1rem; background: #f9f9f9; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+          <iframe 
+            style="border: none; width: 100%; height: 400px; border-radius: 10px;"
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FTokyo&mode=MONTH&src=bWFzYWg3NjJAZ21haWwuY29t&src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%230B8043"
+            frameborder="0"
+            scrolling="no">
+          </iframe>
+        </div>
+      </div>
+      <div class="responsive-text-main">
+        <h2 class="boderLine">基本情報</h2>
+        <ul class="info-list">
+          <li><span class="label">名称：</span><span class="content">プログラミングパーク</span></li>
+          <li><span class="label">愛称：</span><span class="content">プロパ</span></li>
+          <li><span class="label">場所：</span><span class="content">Creation Lab</span></li>
+          <li><span class="label">開室時間：</span><span class="content">火曜日 / 水曜日 (13:20 ～ 16:55)</span></li>
+          <li><span class="label">利用対象：</span><span class="content">京都橘大学 在学生・教職員</span></li>
+          <li><span class="label">お問い合わせ：</span><span class="content">未定</span></li>
+        </ul>
+      </div>
+      
+    </div>
+  
+    <div class="right-content">
+      
+      <div class="responsive-text-right">
+        <h2 class="boderLine">お知らせ</h2>
+        <ul>
+          <li class="notice-list">ゲーム機制作イベントを開催します！<br>(2025/04/20)</li>
+          <li class="notice-list">プログラミングパークのホームページが公開されました！　　　　　　　　　　　　　　　　　　<br>(2025/04/20)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+
+    function resetContentVisibility() {
+      if (window.innerWidth >= 1000) {
+        // 画面が大きい場合、すべてのコンテンツを表示
+        document.querySelectorAll('.left-content, .main-content, .right-content').forEach(content => {
+          content.classList.remove('hidden');
+          content.style.display = 'block';
+        });
+      } else {
+        // 画面が小さい場合、main-contentのみを表示
+        document.querySelectorAll('.left-content, .right-content').forEach(content => {
+          content.classList.add('hidden');
+          content.style.display = 'none';
+        });
+        const mainContent = document.querySelector('.main-content');
+        if (mainContent) {
+          mainContent.classList.remove('hidden');
+          mainContent.style.display = 'block';
+        }
+      }
+    }
+
+    // ボタンを押したときの処理
+    document.querySelectorAll('.button-text').forEach(button => {
+      button.addEventListener('click', event => {
+        event.preventDefault(); // デフォルトのリンク動作を無効化
+
+        // 全てのコンテンツを非表示にする
+        document.querySelectorAll('.left-content, .main-content, .right-content').forEach(content => {
+          content.classList.add('hidden');
+          content.style.display = 'none';
+        });
+
+        // 対象のコンテンツを表示する
+        const target = button.getAttribute('data-target');
+        const targetElement = document.querySelector(`.${target}`);
+        if (targetElement) {
+          targetElement.classList.remove('hidden');
+          targetElement.style.display = 'block';
+        }
+      });
+    });
+
+    // 画面サイズ変更時の処理
+    window.addEventListener('resize', resetContentVisibility);
+
+    // 初期状態のリセット
+    resetContentVisibility();
+
+    // JavaScriptでメニュー開閉を制御
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+
+    function updateDateTime() {
+      const now = new Date();
+      document.getElementById("calendar").textContent =
+        now.getFullYear() + "/" +
+        String(now.getMonth() + 1).padStart(2, "0") + "/" +
+        String(now.getDate()).padStart(2, "0");
+
+      document.getElementById("clock").textContent =
+        now.toLocaleTimeString();
+    }
+
+    function updateClock() {
+      const now = new Date();
+      const seconds = now.getSeconds();
+      const minutes = now.getMinutes();
+      const hours = now.getHours();
+
+      const secondDeg = (seconds / 60) * 360 + 270;
+      const minuteDeg = (minutes / 60) * 360 + (seconds / 60) * 5 + 270;
+      const hourDeg = (hours / 12) * 360 + (minutes / 60) * 30 + 270;
+
+      document.querySelector('.second-hand').style.transform = `rotate(${secondDeg}deg)`;
+      document.querySelector('.minute-hand').style.transform = `rotate(${minuteDeg}deg)`;
+      document.querySelector('.hour-hand').style.transform = `rotate(${hourDeg}deg)`;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>機器利用｜京都橘大学 プログラミングパーク</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" sizes="192x192" href="https://static.wixstatic.com/media/c9d870_e403d9ddc20b4219aaa594075e6ba5a5%7Emv2.jpg/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/c9d870_e403d9ddc20b4219aaa594075e6ba5a5%7Emv2.jpg" type="image/jpeg"/>
+  <link rel="shortcut icon" href="https://static.wixstatic.com/media/c9d870_e403d9ddc20b4219aaa594075e6ba5a5%7Emv2.jpg/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/c9d870_e403d9ddc20b4219aaa594075e6ba5a5%7Emv2.jpg" type="image/jpeg"/>
+  <link rel="apple-touch-icon" href="https://static.wixstatic.com/media/c9d870_e403d9ddc20b4219aaa594075e6ba5a5%7Emv2.jpg/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/c9d870_e403d9ddc20b4219aaa594075e6ba5a5%7Emv2.jpg" type="image/jpeg"/>
+</head>
+<body>
+  <!-- ヘッダーを読み込むためのdiv要素=============================================================================================== -->   
+  <nav class="navbar">
+    <a href="index.html" class="noUnderLine"><span class="logo"><span>京都橘大学</span><br>プログラミングパーク</span></a>
+  
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+    <div class="menu" id="menu">
+      <a href="index.html">ホーム</a>
+      <a href="equipment.html">機器利用</a>
+      <a href="academic_support.html">学習支援</a>
+      <a href="Organization_Overview.html">組織概要</a>
+      <a href="inquiry.html">お問い合わせ</a>
+    </div>
+  </nav>
+  
+  <div class="hero">
+    <img src="img/20250419_CreationLab_img.png" alt="メイン画像" class="hero-image">
+      <div class="hero-title">
+      </div>
+  </div>
+  
+  <!-- <メイン画面の3列設定======================================================================================================== -->
+  <div class="three-column-layout">
+
+    <div class="main-content">
+      <div class="responsive-text-main">
+        <!-- 機器の詳細=========================================================================================================== -->
+        <h2 class="boderLine">Stratasys F170</h2>
+        <img src="img/20250422_stratasysF170_img.jpg" alt="Stratasys F170" class="equipment-image">
+        
+        <div class="equipment-details">
+          <h3>機器の詳細</h3>
+          <ul>
+            <li>メーカー：Stratasys</li>
+            <li>型番：F170</li>
+            <li>使用材料：ABS-M30、ASA、PC-ABS、PLA、TPU 92A</li>
+            <li>積層方式：FDM（Fused Deposition Modeling）</li>
+            <li>最大造形サイズ：254 x 254 x 254 mm</li>
+            <li>最小積層ピッチ：0.127 mm</li>
+          </ul>
+        </div>
+    </div>
+    <div class="return-button">
+      <a href="equipment.html">戻る</a>
+    </div>
+      
+      
+    </div>
+  </div>
+  
+  <script>
+    
+    // JavaScriptでメニュー開閉を制御
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+
+    function updateDateTime() {
+      const now = new Date();
+      document.getElementById("calendar").textContent =
+        now.getFullYear() + "/" +
+        String(now.getMonth() + 1).padStart(2, "0") + "/" +
+        String(now.getDate()).padStart(2, "0");
+
+      document.getElementById("clock").textContent =
+        now.toLocaleTimeString();
+    }
+
+    function updateClock() {
+      const now = new Date();
+      const seconds = now.getSeconds();
+      const minutes = now.getMinutes();
+      const hours = now.getHours();
+
+      const secondDeg = (seconds / 60) * 360 + 270;
+      const minuteDeg = (minutes / 60) * 360 + (seconds / 60) * 5 + 270;
+      const hourDeg = (hours / 12) * 360 + (minutes / 60) * 30 + 270;
+
+      document.querySelector('.second-hand').style.transform = `rotate(${secondDeg}deg)`;
+      document.querySelector('.minute-hand').style.transform = `rotate(${minuteDeg}deg)`;
+      document.querySelector('.hour-hand').style.transform = `rotate(${hourDeg}deg)`;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+  </script>
+
+</body>
+</html>
